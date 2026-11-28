@@ -1,0 +1,34 @@
+[lockscreen]
+# Pool of transition effects (Noctalia picks one at random each time)
+# Set to [] to disable lock/unlock transitions completely
+transition = ["fade", "zoom"]
+#transition = ["disc"]
+
+# Animation length in milliseconds (range: 100 – 30000, default: 1500)
+transition_duration = 400
+
+# Feathering around transition edges (range: 0.0 = sharp to 1.0 = soft, default: 0.3)
+edge_smoothness = 0.1
+
+
+[lockscreen_widgets]
+enabled = true
+schema_version = 2
+widget_order = [
+  "lockscreen-login-box@eDP-1"
+]
+
+
+[lockscreen_widgets.widget."lockscreen-login-box@eDP-1"]
+type = "login_box"
+output = "eDP-1"
+enabled = true
+
+# Center point of the widget in logical pixels (width / 2, height / 2)
+cx = 960.0
+cy = 540.0
+
+# Dimensions of the login box
+box_width = 400.0
+box_height = 70.0
+rotation = 0.0

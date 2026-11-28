@@ -1,0 +1,78 @@
+[bar]
+order = ["main"]
+
+[bar.default]
+position = "top"
+thickness = 40
+background_opacity = 0.8
+margin_ends        = 70
+widget_spacing     = 20
+scale              = 1.4
+#font_scale         = 1.2
+padding = 20
+
+enabled            = true
+auto_hide          = false
+auto_hide_delay_ms = 0
+smart_auto_hide    = false
+show_on_workspace_switch = true
+reserve_space      = true
+auto_hide_reserve_space = false
+layer              = "top"
+
+start  = ["control-center", "launcher",  "workspaces"]
+center = ["clock"]
+end    = ["battery", "tray", "notifications", "network", "bluetooth", "brightness", "volume", "session"]
+#end    = ["media", "tray", "notifications", "clipboard", "network", "bluetooth", "volume", "brightness", "battery", "control-center", "session"]
+
+
+[widget.network]
+type = "network"
+show_label = false
+
+[widget.volume]
+#scale = 1.1
+show_glyph = true
+show_label = false
+
+[widget.brightness]
+show_label = false
+
+[widget.battery]
+font_scale = 0.9
+#show_label = false
+
+[widget.workspaces]
+#separator = " "
+
+
+
+compositor_blur    = true
+border             = "outline_variant"
+border_width       = 0.0
+shadow             = true
+contact_shadow     = false
+panel_overlap      = 1
+radius             = 12
+radius_top_left    = 12
+radius_top_right   = 12
+radius_bottom_left = 12
+radius_bottom_right = 12
+concave_edge_corners = true
+margin_edge        = 0
+margin_opposite_edge = 0
+padding            = 14
+hover_highlight    = true
+show_tooltip       = true
+font_weight        = 500
+font_family        = ""
+
+capsule            = false
+capsule_fill       = "surface_container"
+capsule_thickness  = 0.76
+capsule_radius     = 8.0           # omit for automatic pill radius
+capsule_opacity    = 1.0
+# capsule_border   = "outline_variant"
+capsule_border_width = 1.0
+
+
